@@ -1,19 +1,37 @@
-name: Test Workflow
+name: CI Jeux Videops
 
 on:
   push:
-    branches: [ main, master ]
-    workflow_dispatch:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
-  premier-pas:
+  build-and-test:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Récupérer le code
-        uses: actions/checkout@v3
+      - name: Checkout du code
+        uses: actions/checkout@v4
 
-      - name: Salutations
-        run: echo "Hello Github Actions!"
+      - name: Installation de Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
 
-      - name: Listes des fichiers du projet
-        run: ls -R
+      - name: Installation des dépendances
+        run: npm ci
+
+      - name: Vérification du Linter (Qualité)
+        run: npm run eslint:check
+
+      - name: Tests Unitaires et Couverture
+        run: npm run nyc:run
+
+      - name: Génération de la Documentation
+        run: npm run jsdoc
+
+      - name: Tests Fonctionnels (Cypress)
+        run: npm run cypress:test
