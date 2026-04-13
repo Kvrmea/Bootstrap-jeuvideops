@@ -211,7 +211,33 @@ bootstrap-jeuvideops/
 
 ## 👤 Auteur
 
-**Sofian B.** — Étudiant Web@cadémie Epitech Paris (Promo W1)  
-En recherche d’alternance — Développement Web / Cybersécurité
+**Hugo M.**  
+🎓 Étudiant Web@cadémie Epitech Paris (Promo W1)  
+🚀 En recherche d’alternance — Développement Fullstack / IA
 
-[![GitHub](https://img.shields.io/badge/GitHub-sofian--bll-181717?style=flat-square&logo=github)](https://github.com/sofian-bll)
+---
+
+### 🌐 Me retrouver
+[![GitHub](https://img.shields.io/badge/GitHub-Kvrmea-181717?style=for-the-badge&logo=github)](https://github.com/Kvrmea)
+
+---
+
+### ⚡ Stack & outils
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-000000?style=for-the-badge&logo=javascript)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+
+---
+
+### 📊 GitHub Stats
+![Stats](https://github-readme-stats.vercel.app/api?username=Kvrmea&show_icons=true&theme=tokyonight&hide_border=true&cache_seconds=60)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Kvrmea&layout=compact&theme=tokyonight&hide_border=true)
+
+---
+
+### 🧠 Objectif actuel
+> Devenir un dev fullstack solide avec une spécialisation en IA, capable de construire des projets ambitieux et utiles.
