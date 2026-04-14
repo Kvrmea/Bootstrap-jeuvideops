@@ -37,7 +37,8 @@ app.get('/div', (req, res) => {
 app.get('/pow', (req, res) => {
   const a = parseFloat(req.query.a);
   const b = parseFloat(req.query.b);
-  res.send(`${a} ^ ${b} = ${calc.power(a, b)}`);
+  const result = calc.power(a, b);
+  res.send(`${a} ^ ${b} = ${result}`);
 });
 
 app.listen(PORT, () => {

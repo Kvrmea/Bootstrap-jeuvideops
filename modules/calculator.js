@@ -8,36 +8,36 @@
 class Calculator {
   /**
    * Performs addition
-   * @param {Float} a
-   * @param {Float} b
-   * @return {Float} Sum of the parameters
+   * @param {number} a
+   * @param {number} b
+   * @return {number} Sum of the parameters
    */
   add(a, b) {
     return a + b;
   }
   /**
    * Performs multiplication
-   * @param {Float} a
-   * @param {Float} b
-   * @return {Float} Product of the parameters
+   * @param {number} a
+   * @param {number} b
+   * @return {number} Product of the parameters
    */
   multiply(a, b) {
     return a * b;
   }
   /**
    * Performs division
-   * @param {Float} a
-   * @param {Float} b
-   * @return {(Float | Infinity)} Division of a by b, Infinity if divisor is 0
+   * @param {number} a
+   * @param {number} b
+   * @return {(number | Infinity)} Division of a by b
    */
   divide(a, b) {
     return a / b;
   }
   /**
    * Performs substraction
-   * @param {Float} a
-   * @param {Float} b
-   * @return {Float} Difference between a and b
+   * @param {number} a
+   * @param {number} b
+   * @return {number} Difference between a and b
    */
   subtract(a, b) {
     return a - b;
@@ -49,7 +49,7 @@ class Calculator {
    * @param {number} b exponent
    * @return {number} a power b
    */
-  power(a, b) { // NEW FEATURE
+  power(a, b) {
     if (b < 0) {
       return 1 / a * this.power(a, b + 1);
     } else if (b > 0) {
