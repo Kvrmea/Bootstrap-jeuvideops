@@ -6,7 +6,7 @@ const app = express();
 const calc = new Calculator.Calculator();
 
 app.get('/', (req, res) => {
-  res.send('[CPT]');
+  res.send('Welcome to the calculator app!');
 });
 
 app.get('/add', (req, res) => {
@@ -25,12 +25,15 @@ app.get('/mul', (req, res) => {
 });
 
 app.get('/div', (req, res) => {
-  const result = calc.divide(parseFloat(req.query.a), parseFloat(req.query.b));
-  if (result == Infinity) {
-    res.send(`Cannot divide ${req.query.a} by zero`);
+  const a = parseFloat(req.query.a);
+  const b = parseFloat(req.query.b);
+  const result = calc.divide(a, b);
+
+  if (result === Infinity) {
+    return res.send(`Cannot divide ${req.query.a} by zero`);
   }
-  res.send(`${req.query.a} / ${req.query.b} = \
-    ${calc.multiply(parseFloat(req.query.a), parseFloat(req.query.b))}`);
+
+  res.send(`${a} / ${b} = ${calc.divide(a, b)}`);
 });
 
 // NEW FEATURE
