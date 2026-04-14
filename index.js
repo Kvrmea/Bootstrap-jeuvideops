@@ -33,9 +33,11 @@ app.get('/div', (req, res) => {
     ${calc.multiply(parseFloat(req.query.a), parseFloat(req.query.b))}`);
 });
 
-//NEW FEATURE
+// NEW FEATURE
 app.get('/pow', (req, res) => {
-  res.send(`${req.query.a} ^ ${req.query.b} = ${calc.power(parseFloat(req.query.a), parseFloat(req.query.b))}`);
+  const a = parseFloat(req.query.a);
+  const b = parseFloat(req.query.b);
+  res.send(`${a} ^ ${b} = ${calc.power(a, b)}`);
 });
 
 app.listen(PORT, () => {

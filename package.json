@@ -9,6 +9,7 @@
         "cypress:run": "cypress run",
         "cypress:test": "start-server-and-test app:serve http://localhost:3000 cypress:run",
         "eslint:check": "eslint index.js modules/*",
+        "eslint:fix": "eslint index.js modules/* --fix",
         "app:serve": "nodemon",
         "jsdoc": "jsdoc modules/ -d docs"
     },
